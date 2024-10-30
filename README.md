@@ -1,3 +1,3 @@
 # Django Admin
 
-> Admin panel created in Django (a python framework)
+> This project is an Admin panel built using Django, a powerful Python framework, designed to manage different user roles and facilitate complete CRUD (Create, Read, Update, Delete) operations for users. The system provides a flexible and secure management solution, enabling administrators to control user access levels efficiently. With Django’s robust authentication and authorization features, this panel ensures that user data is handled securely and roles are assigned based on the needs of each user. This project serves as a versatile foundation for building comprehensive admin solutions for any application.
