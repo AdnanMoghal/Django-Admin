@@ -18,12 +18,14 @@ from django.contrib import admin
 from django.shortcuts import redirect
 from django.urls import path, include
 from django.contrib.auth import views as auth_views  # Import auth_views here
+from . import views  # Ensure you have an index view
 
 urlpatterns = [
+    path('', views.index, name='index'),  # root URL
     path('admin/', admin.site.urls),
     path('accounts/', include('accounts.urls')),  # Include the accounts app URLs
     path('login/', auth_views.LoginView.as_view(template_name='accounts/login.html'), name='login'),
     path('logout/', auth_views.LogoutView.as_view(), name='logout'),
-    path('', lambda request: redirect('admin/login/')),  # Redirect root to login
+    # path('', lambda request: redirect('admin/login/')),  # Redirect root to login
     path("__reload__/", include("django_browser_reload.urls")),
 ]
