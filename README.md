@@ -13,3 +13,15 @@
 - db.sqlite3
 - manage.py
 - README.md
+
+1. Run the project
+
+```
+python manage.py runserver
+```
+
+2. Run the project on specific port
+
+```
+python manage.py runserver 8080
+```
