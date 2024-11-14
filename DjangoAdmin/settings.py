@@ -44,10 +44,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'accounts',
-    'tailwind',
-    # 'theme',
-    'django_browser_reload'
 ]
 
 MIDDLEWARE = [
@@ -66,7 +62,7 @@ ROOT_URLCONF = 'DjangoAdmin.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
